@@ -3,7 +3,7 @@ Given(/^a user visits the home page$/) do
 end
 
 Given(/^I Follow "(.*?)"$/) do |arg1|
-    click_link(arg1)
+    first(:link, arg1).click
 end
 
 Then(/^the user should see the content "(.*?)"$/) do |arg1|
