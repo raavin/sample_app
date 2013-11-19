@@ -2,6 +2,10 @@ Given(/^a user visits the home page$/) do
   visit root_path
 end
 
+Given(/^I Follow "(.*?)"$/) do |arg1|
+    click_link(arg1)
+end
+
 Then(/^the user should see the content "(.*?)"$/) do |arg1|
   page.should have_content(arg1)
 end
