@@ -2,18 +2,6 @@ Given(/^a user visits the home page$/) do
   visit root_path
 end
 
-Given(/^a user visits the help page$/) do
-  visit help_path
-end
-
-Given(/^a user visits the about page$/) do
-  visit about_path
-end
-
-Given(/^a user visits the contact page$/) do
-  visit contact_path
-end
-
 Given(/^they follow "(.*?)"$/) do |arg1|
     first(:link, arg1).click
 end
