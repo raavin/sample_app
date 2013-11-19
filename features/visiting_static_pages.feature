@@ -13,28 +13,28 @@ Feature: Static pages
     not display "| Home" in the title.
 
   	Given a user visits the home page
-  	And I Follow "Home"
-  	Then the user should see the content "Sample App"
-  	And the user should see the title "Ruby on Rails Tutorial Sample App"
-  	And the user should not see the page title "| Home"
+  	And they follow "Home"
+  	Then they should see the content "Sample App"
+  	And they should see the title "Ruby on Rails Tutorial Sample App"
+  	And they should not see the page title "| Home"
 
   Scenario: Visit help page
 
   	Given a user visits the home page
-  	And I Follow "Help"
-  	Then the user should see the content "Help"
-  	And the user should see the title "Ruby on Rails Tutorial Sample App | Help"
+  	And they follow "Help"
+  	Then they should see the content "Help"
+  	And they should see the title "Ruby on Rails Tutorial Sample App | Help"
 
   Scenario: Visit About page
 
   	Given a user visits the home page
-  	And I Follow "About"
-  	Then the user should see the content "About Us"
-  	And the user should see the title "Ruby on Rails Tutorial Sample App | About Us"
+  	And they follow "About"
+  	Then they should see the content "About Us"
+  	And they should see the title "Ruby on Rails Tutorial Sample App | About Us"
 
   Scenario: Visit Contact page
 
   	Given a user visits the home page
-  	And I Follow "Contact"
-  	Then the user should see the content "Contact"
-  	And the user should see the title "Ruby on Rails Tutorial Sample App | Contact"
+  	And they follow "Contact"
+  	Then they should see the content "Contact"
+  	And they should see the title "Ruby on Rails Tutorial Sample App | Contact"
