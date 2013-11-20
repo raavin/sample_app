@@ -3,11 +3,11 @@
         <div class="container">
           <%= link_to "sample app", '#', id: "logo" %>
           <nav>
-            <ul class="nav pull-right">
-              <li><%= link_to "Home", root_path %></li>
-              <li><%= link_to "About", about_path %></li>
-              <li><%= link_to "Help", help_path %></li>
-              <li><%= link_to "Sign in", '#' %></li>
+            <ul class="nav pull-right", id: "nav_bar">
+              <li><%= link_to "Home", root_path, id: "nav_home" %></li>
+              <li><%= link_to "About", about_path, id: "nav_about" %></li>
+              <li><%= link_to "Help", help_path, id: "nav_help" %></li>
+              <li><%= link_to "Sign in", '#', id: "nav_signin" %></li>
             </ul>
           </nav>
         </div>

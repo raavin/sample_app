@@ -3,7 +3,8 @@ Given(/^a user visits the home page$/) do
 end
 
 Given(/^they follow "(.*?)"$/) do |arg1|
-    first(:link, arg1).click
+ save_and_open_page
+ arg1 == "About" ? click_link("nav_about"): first(:link, arg1).click
 end
 
 Then(/^they should see the content "(.*?)"$/) do |arg1|
